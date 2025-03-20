@@ -9,8 +9,8 @@ interface Product {
 
 const ManageState:React.FC = () => {
     const [count, setCount] = useState<number>(0);
-    const [name, setName] = useState<string>('');
-    const [user, setUser] = useState<{ id: number, name: string } | null>(null); 
+    // const [name, setName] = useState<string>('');
+    // const [user, setUser] = useState<{ id: number, name: string } | null>(null); 
     
     const [products, setProducts] = useState<Product[]>([{id:101,name:'tv',price:5000}]);
 
@@ -32,9 +32,9 @@ const ManageState:React.FC = () => {
 <p>Count: {count}</p>
                 <button onClick={incrementCount}>Increment</button>
 
-                {user && (
+                {/* {user && (
                     <p>User Name: {user.name}</p>
-                )}
+                )} */}
 
     </div>
   )
